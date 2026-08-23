@@ -1,37 +1,37 @@
 {
-  "team_id": "your-team-id",
+  "team_id": "enigma-labs-adura",
   "domain": "coding_assistants",
   "language_scope": ["en"],
   "african_alpha_claim": false,
   "budget_laptop_claim": true,
   "submitter": {
-    "name": "your-name",
-    "email": "your-email@domain.com",
+    "name": "Adeboye",
+    "email": "oyeniyiadeboye@gmail.com",
     "github_handle": "your-github"
   },
   "cross_disciplinary_pairing": {
-    "discipline": "education",
+    "discipline": "industrial_automation",
     "load_bearing": true,
-    "description": "Brief description of how your model serves a real-world domain."
+    "description": "Converts plain-English process descriptions into validated IEC 61131-3 Structured Text for low-cost ESP32-based PLCs, targeting SME manufacturers in emerging markets who lack access to certified PLC programmers."
   },
   "test_prompts": [
     {
       "prompt_id": "tp_001",
-      "prompt": "Write a Python function that reads a CSV file and returns the column with the highest mean value."
+      "prompt": "When the conveyor sensor detects a bottle, activate the filler valve for 3 seconds, then close it and wait for the next bottle."
     },
     {
       "prompt_id": "tp_002",
-      "prompt": "Explain the difference between a list and a tuple in Python, and give one example where each is the better choice."
+      "prompt": "Advance the packaging line when a product is detected at the entry sensor. Stop the line if any of the three safety guards are triggered."
     }
   ],
   "model": {
-    "name": "SmolLM2-135M-Instruct-Q4_K_M",
+    "name": "Qwen3-8B-Q5_K_M",
     "runtime": "llama.cpp",
-    "quantization": "GGUF Q4_K_M",
-    "parameters_estimate": "135M",
+    "quantization": "GGUF Q5_K_M",
+    "parameters_estimate": "8B",
     "packaging": "binary_bundle"
   },
   "_runtime": {
-    "model_path": "model/SmolLM2-135M-Instruct-Q4_K_M.gguf"
+    "model_path": "model/qwen3-8b-q5_k_m.gguf"
   }
 }
