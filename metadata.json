@@ -17,11 +17,11 @@
   "test_prompts": [
     {
       "prompt_id": "tp_001",
-      "prompt": "When the conveyor sensor detects a bottle, activate the filler valve for 3 seconds, then close it and wait for the next bottle."
+      "prompt": "When the conveyor sensor detects a bottle, open the filler valve for exactly 3 seconds, then close it and wait for the next bottle. The valve must be able to re-trigger on every subsequent bottle, so reset the timer after each fill. Read the sensor as an input — never assign a value to it. Declare every timer instance in a VAR block."
     },
     {
       "prompt_id": "tp_002",
-      "prompt": "Advance the packaging line when a product is detected at the entry sensor. Stop the line if any of the three safety guards are triggered."
+      "prompt": "Advance the packaging line only while a product is detected at the entry sensor. Stop the line immediately if any of the three safety guards is triggered. Express the line output as a single boolean expression combining the sensor and all three guards, so the result cannot depend on rung execution order. Read all sensors and guards as inputs — never assign values to them."
     }
   ],
   "model": {
