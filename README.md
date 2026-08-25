@@ -10,15 +10,15 @@ Fork this repository, fill in the required files, and submit your repository URL
 
 Before submitting, confirm every item:
 
-- [ ] Your repository is **public** on GitHub
-- [ ] `metadata.json` is fully filled in — no placeholder values remain
-- [ ] `metadata.json` contains exactly **2 test prompts** in the `test_prompts` array, written for your chosen domain
-- [ ] `download_model.sh` successfully downloads your model to `model/`
-- [ ] The downloaded file is a valid **GGUF format** (`.gguf`) weight file
-- [ ] `model/*.gguf` is listed in `.gitignore` — do **not** commit large weight files
-- [ ] `REPORT.md` is filled in with your technical writeup
-- [ ] Running `bash download_model.sh` completes without errors
-- [ ] Your model runs entirely **offline** — zero external network calls during inference
+- [x] Your repository is **public** on GitHub
+- [x] `metadata.json` is fully filled in — no placeholder values remain
+- [X] `metadata.json` contains exactly **2 test prompts** in the `test_prompts` array, written for your chosen domain
+- [x] `download_model.sh` successfully downloads your model to `model/`
+- [x] The downloaded file is a valid **GGUF format** (`.gguf`) weight file
+- [x] `model/*.gguf` is listed in `.gitignore` — do **not** commit large weight files
+- [x] `REPORT.md` is filled in with your technical writeup
+- [X] Running `bash download_model.sh` completes without errors
+- [x] Your model runs entirely **offline** — zero external network calls during inference
 
 ---
 
